@@ -10,6 +10,7 @@
             [loom.attr :as la]
             [ubergraph.protocols :as up]
             [dorothy.core :as d]
+            [dorothy.jvm :as dj]
             [clojure.string :as str]
             [clojure.pprint]))
 
@@ -960,5 +961,5 @@
          d/dot
          (cond->
              (and save (= :dot format)) (#(spit filename %))
-             (and save (not= :dot format)) (d/save! filename {:format format})
-             (not save) d/show!)))))
+             (and save (not= :dot format)) (dj/save! filename {:format format})
+             (not save) dj/show!)))))
