@@ -11,7 +11,7 @@
         :main-opts ["-m" "codox.main"
                     "-o" "doc"
                     "-n" "ubergraph.core ubergraph.alg"
-                    "--source-uri" 
+                    "--source-uri"
                     "http://github.com/Engelberg/ubergraph/tree/master/{filepath}#L{line}"]}}
 
  :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
